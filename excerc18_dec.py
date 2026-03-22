@@ -6,7 +6,7 @@ N2: int=0
 
 #Início
 
-N1 =int (input("Insira o segundo número:"))
+N1 =int (input("Insira o primeiro número:"))
 N2 = int(input("Insira o segundo número:"))
 
 if (N1 > N2):
