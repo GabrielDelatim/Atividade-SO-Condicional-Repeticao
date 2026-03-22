@@ -8,9 +8,20 @@ extenc: float=0
 
 #Início
 
-extenc = float(input("Insira a extensão do circuito em metros:"))
-voltas = float(input("Insira o número de voltas:"))
-durac_minutos = float(input("Insira a duração em minutos:"))
+while(extenc <=0):
+    extenc = float(input("Insira a extensão do circuito em metros:"))
+    if (extenc <= 0):
+        print("Insira apenas valores positivos!")
+        
+while(voltas <=0):
+    voltas = float(input("Insira o número de voltas:"))
+    if (voltas <= 0):
+        print("Insira apenas valores positivos!")
+        
+while(durac_minutos <=0): 
+    durac_minutos = float(input("Insira a duração em minutos:"))
+    if (durac_minutos <= 0):
+        print("Insira apenas valores positivos!") 
 
 distancia_km = (voltas * extenc) / 1000
 
